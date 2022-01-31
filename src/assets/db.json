@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "productName": "jhvj",
+      "productBrand": "kuk",
+      "price": "uhkjk"
+    },
+    {
+      "id": "45",
+      "productName": "yt",
+      "productBrand": "yui",
+      "price": "678"
+    },
+    {
+      "id": "768j",
+      "productName": "ygugi",
+      "productBrand": "ugiugi",
+      "price": "iug"
+    },
+    {
+      "id": "1",
+      "productName": "khuk",
+      "productBrand": "kjk",
+      "price": "jkj"
+    }
+  ]
+}

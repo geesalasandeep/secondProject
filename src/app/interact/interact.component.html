@@ -1,0 +1,36 @@
+
+
+<table class="table" >
+<tr>
+    <th>#</th>
+    <th>productName</th>
+    <th>ProductBrand</th>
+    <th>Price</th>
+</tr>
+<tr *ngFor = "let detail of products,index as i " >
+    <td> {{ i+1 }} </td>
+    <td> {{detail.productName}} </td>
+    <td> {{detail.productBrand}} </td>
+    <td> {{detail.price}} </td>
+</tr>
+</table>
+
+
+<input type="text" [(ngModel)] = "id" placeholder="enter id"><br>
+<input type="text" [(ngModel)] =  "name" placeholder="enter name"><br>
+<input type="text" [(ngModel)] = "brand" placeholder="enter brand"><br>
+<input type="text" [(ngModel)] = "price" placeholder="enter price" ><br>
+<button (click) = "addProduct()" > ADD new Data </button>
+
+
+<div col-md-3 offset-md-3>
+<input type="text" [(ngModel)] = "id1" placeholder="enter id"><br>
+<input type="text" [(ngModel)] =  "name1" placeholder="enter name"><br>
+<input type="text" [(ngModel)] = "brand1" placeholder="enter brand"><br>
+<input type="text" [(ngModel)] = "price1" placeholder="enter price" ><br>
+<button (click) = "updateProduct()" class="btn btn-warning" > UPDATE Data </button>
+
+</div>
+<br><br>
+<input type="text" [(ngModel)] = "deleteitem" >
+<button class="btn btn-danger" (click) ="delete()" >delete</button>

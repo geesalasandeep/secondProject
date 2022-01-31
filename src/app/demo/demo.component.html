@@ -1,0 +1,10 @@
+<table class="table">
+<tr>
+    <th colspan="col">name</th>
+    <th colspan="col">id</th>
+</tr>
+   <tr *ngFor="let user of users">
+     <td>{{user.name | uppercase}}</td>
+     <td>{{user.id}}</td>
+   </tr>
+</table>

@@ -1,0 +1,48 @@
+<div class= "col-md-3 offset-md-3" >
+  <form [formGroup] = "signInForm" (ngSubmit) = "onFormSubmit()" >
+
+    <div class="mb-3">  
+      <label for="email" class="form-label">Email address</label>
+
+      <input type="email" class="form-control" 
+      id="email" formControlName = "email" name="emailField"  >  
+
+    </div>
+
+
+    <div class="mb-3 form-group " [class.has.error] = "f.password.touched && f.password.invalid" >
+      <label for="password" class="control-label">Password</label>
+
+      <input type="text" class="form-control" ngModel
+      formControlName ="password" required
+       id="password"  name="passwordField" >
+      </div>
+      <!-- <div>
+        password is required 
+        
+      </div> -->
+
+
+
+      <div class="mb-3 form-group " [class.has.error] = "f.password.touched && f.password.invalid">
+        <label for="confirmpassword" class="control-label">Confirm Password</label>
+        <input type="text" class=" form-control" appConfirmEqualValidator = " password" ngModel 
+        formControlName ="confirmpassword"
+         id="password"  name="confirmpasswordField" >
+<div class="text-danger"  > 
+must equal
+</div>
+
+        </div>
+    
+
+      <!-- <div class="text-danger" *ngIf = " f.password.value === f.confirmpassword.value">
+        both fiels are to be same
+      </div> -->
+
+      <button type="submit" (click) = "pass()"  >Submit</button>
+
+  </form>
+  
+
+</div>

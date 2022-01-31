@@ -1,0 +1,18 @@
+<!-- <p>pipe works!</p> -->
+<input type="text" class="form-control mb-3 mt-2 border border-dark"
+placeholder="Search By Names" [(ngModel)] = "searchItem" >
+
+<table class="table" >
+<tr>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>DOB</th>
+    <th>Designation</th>
+</tr>
+<tr *ngFor = "let detail of empData | employee : searchItem" >
+    <td> {{ detail.empName }} </td>
+    <td> {{detail.Salary | currency }} </td>
+    <td> {{detail.DOB}} </td>
+    <td> {{detail.Designation}} </td>
+</tr>
+</table>
